@@ -1,0 +1,126 @@
+					<---------------------------------------------------->
+					Primeiros passos,primeiros commits,Fluxos e Versões.
+                    <---------------------------------------------------->
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Git init: faz a past virar .git
+Git touch "nome do arquivo": cria um arquivo dentro do repositorio
+
+
+Git add exemplo.txt: adiciona um arquivo
+nano exemplo.txt: edita arquivo
+
+Git log: visualiza os logs o seja os commits criados
+
+Git commit -a -m "comentario":faz com que todos, os commits que estão em vermelho fiquem a ser utilizados
+
+Git add. : ele da um funcionamento a todos os
+commits, mas tem que ter cuidado
+
+Git -p: mostra as auterações nos commits.
+
+Git -p -2 ou utro valor numerado: mostra somente uma parte que vc quer ver.
+
+Git log --stat: ele diz olha, tais commits foram alterados ou removidos
+
+Git log --pretty=oneline: mostra todos os commits, em uma linha só.
+
+Git log --pretty=format: "%h-%an,%ar :%s"
+
+Git --since=2.days: mim mostra uma lista de logs que ocorreu em  2 dias.
+
+Git touch "name arquivo": cria um novo commit
+
+Git reset HEAD"NOME DO ARQUIVO"
+
+Git checkout e o codigo do commit: o trna principal
+
+Git checkoud master: volta as configurações normais, exemplo retorna antes de vc adivionar um so commit como principal
+
+Git reset HEAD --hard: ele volta ou seja arranca todos os commits e os que os acompanham entao tome cuiddo!
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+OBS!!!: Vamos imaginar que você possui um arquivo no controle de versão chamado exemplo.php.
+
+Imagine agora que você fez diversas alterações nesse arquivo, porém, por qualquer motivo, você se arrependeu de fazê-las (lembrando que você apenas fez as alterações, mas não as commitou). Para você fazer o conteúdo do arquivo voltar ao estado original, digite:
+
+git checkout -- exemplo.php
+
+Rodando esse comando, todos as alterações realizadas serão perdidas e o arquivo voltará exatamente como estava antes.
+
+Esse recurso é extremamente útil, porém deve ser usado com cuidado.
+
+|O QUÊ EU APRENDI? |
+--------------------
+|OS COMMITS ELES SÃO GESTORES DE ARQUIVOS DE UMA APLICAÇÃO, QUE GUARDAM SEUS,DADOS EM SNAPSHOOTS
+(FOTOS), E NOS DAR A OPORTUNIDADES DE TER UMA MAIOR FCILIDADE NA NOSSA GERÊNCA DE DADOS. |
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+								
+							<---------------------------------->	
+							 VOLTANDO AOS COMANDO GIT "BRANCHS"
+                            <---------------------------------->
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+O QUÊ EU APRENDI?
+
+o BRANCH ELE CRIA RAMIFICAÇÕES, EM UM SOFTWARE.pARA QUE O USUÁRIO POSSA, INTERAGIR COM OS ARQUIVOS
+ENQUANTO SE DESENVOLVE O PROJETO UM OUTRO USUARIO ELE DARÁ ALTERNATIVAS,PARA O PROJETO ATUAL, QUE SE ACEITOS O DESENVOLVEDOR DA RAIZ, FARÁ UM MARGIN, DESSA rAIZ PARA O CONTROLE MASTER, QUE EU ONDE OS PROCESSOS, ESTARÃO DANDO PROCEDIMENTO, E MODIFICARÁ DE UMA FORMA MAS ATUALIZADA.
+			1 2 3 4 5 6
+DEDUÇÃO:--------------------------------> ESTA E A LINHA DE DESENVOLVIMENTO,OS NUMEROS SÃO OS COMITES QUE ESTÃO SENDO FEITOS LOGO DEPOIS A EMPRESA PRECISA, FAZER ALTERAÇÕES OU SEJA MODIFICAR ALGO O QUE ACONTECE E UM SEGUINTE.
+			1 2 3 4 5 6
+DEDUÇÃO: ------------------------------->
+				7 8 9       
+SÃO OS COMITES RAMIFICADOS OU SEJA ESOU FAZENDO OUTRAS APLICAÇÕES AO MEU SOFTWARE ENQUANTO MEU PARCEIROS CONTINUAM TRABALHANDO ATÉ EU DÁ O MARGIN NO PROJETO.então o git ele gruda os branchs com outros branchs
+
+									|| Comandos para criar o branch e se locomover ||
+
+Git checkout -b (-b significa branch):  cria um branch
+
+Git checkout "nome do branch criado para ir ao modo branch"	
+
+Git checkout master: volta ao modeo master.								
+
+									|| Comandos para dar um Merge||
+
+Git merge "nome do arquivo"	obs: se vc estiver n branch vai pro master e assim vice e versa.nesse caso vc estara criando um commit do merge e isso nao e legal,existe uma tecnica que se pode alicar mas vc so pode fazer localmente na mnha maquina para nao prejudicar ninguem
+
+Git rebase "Nome do arquivo"
+tira o comite gerado por marge, mas o commit funconalidade fica,assim ajente nao precisa gerar um terceiro commit pra gerara funcionalidade um com as funcionalidade do master.
+
+
+Git branch -D nome-do-branch: ''OBS: Remove o Branch que vc queira.Após uma funcionalidade ser desenvolvida e o merge realizado, você poderá optar por remover o branch. É isso mesmo =)
+
+Remover um branch não significa que você removerá os commits que você realizou, pois o merge já foi feito.''
+
+Github:
+
+Para enviar chaves ao github, vc entra no diretorio, e digita  (cd ~/.ssh/ ) após isso 
+vc cria uma pasta veja se e publica ou nao e envia para cat cat id_rsa.pub, ou não.
+
+Git Push origin master: sobre o arquivo ao meu servidor, github
+
+||OBS||: que antes vc tem que criar uma chave de verificação.
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+									|Como subir um novo Brach |se ler: Bruent|
+
+Para subir este Branch, p o github e simples voce entra,no branch que vc quer exemplo: Git checkout"seu arquivo", ao atualizar seu github e estar pronto.Agora e só alegria viu como e facil.
+
+para vc poder, trazer de volta ex: funcionalidade1, vc faz
+
+git checkout -b origin/funcionalidade1
+
+Git pull: ele vai ver se tem outros arquivos para ele atualizar, isso caso vc esteja trazendo do github,os arquivos raizes e etc..
+
+Git push origin master: ele traz as atualizações do sistema remoto,  paa o master ou outro Branch que vc tenha.
+
+
+
+
+
+
+
+
+
+
+
